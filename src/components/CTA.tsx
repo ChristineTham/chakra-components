@@ -5,7 +5,7 @@ import { Container } from './Container'
 export const CTA: React.FC = () => (
   <Container flexDirection="row" position="fixed" bottom="0" width="100%" maxWidth="48rem" py={2}>
     <ChakraLink isExternal href="https://chakra-ui.com" flexGrow={1} mx={2}>
-      <Button width="100%" variant="outline" colorScheme="green">
+      <Button width="100%" variant="outline" colorScheme="pink">
         chakra-ui
       </Button>
     </ChakraLink>
@@ -16,7 +16,7 @@ export const CTA: React.FC = () => (
       flexGrow={3}
       mx={2}
     >
-      <Button width="100%" variant="solid" colorScheme="green">
+      <Button width="100%" variant="solid" colorScheme="purple">
         View Repo
       </Button>
     </ChakraLink>

@@ -1,11 +1,15 @@
 import { Container } from '../components/Container'
 import AboutMe from '../components/sections/AboutMe'
-import CTA from '../components/sections/CTA'
+import Feature from '../components/sections/Feature'
+import Team from '../components/sections/Team'
+import SectionHead from '../components/sections/SectionHead'
 
 const Index: React.FC = () => (
-  <Container height="100vh">
+  <Container>
     <AboutMe />
-    <CTA />
+    <Feature />
+    <Team />
+    <SectionHead />
   </Container>
 )
 

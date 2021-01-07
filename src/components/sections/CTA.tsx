@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Link, Text } from '@chakra-ui/react'
+import { chakra, Box, Flex, Heading, Link } from '@chakra-ui/react'
 
 export const CTA: React.FC = () => {
   return (
@@ -18,8 +18,8 @@ export const CTA: React.FC = () => {
           letterSpacing="tight"
           color="gray.900"
         >
-          <Text>Ready to dive in?</Text>
-          <Text color="purple.600">Start your free trial today.</Text>
+          <chakra.span>Ready to dive in?</chakra.span>
+          <chakra.span color="purple.600">Start your free trial today.</chakra.span>
         </Heading>
         <Flex mt={{ base: 8, lg: 0 }} flexShrink={{ lg: 0 }}>
           <Box display="inline-flex" rounded="md" shadow="base">

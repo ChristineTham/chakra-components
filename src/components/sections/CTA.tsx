@@ -22,7 +22,7 @@ export const CTA: React.FC = () => {
           <chakra.span color="purple.600">Start your free trial today.</chakra.span>
         </Heading>
         <Flex mt={{ base: 8, lg: 0 }} flexShrink={{ lg: 0 }}>
-          <Box display="inline-flex" rounded="md" shadow="base">
+          <Box display="inline-flex" rounded="md" shadow="Base">
             <Link
               href="#"
               display="inline-flex"
@@ -42,7 +42,7 @@ export const CTA: React.FC = () => {
               Get started
             </Link>
           </Box>
-          <Box display="inline-flex" ml={3} rounded="md" shadow="base">
+          <Box display="inline-flex" ml={3} rounded="md" shadow="Base">
             <Link
               href="#"
               display="inline-flex"

@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Heading, Icon, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, Grid, Heading, Icon, Text, useColorModeValue } from '@chakra-ui/react'
 
 export const Feature: React.FC = () => {
   const bg = useColorModeValue('white', 'gray.800')
@@ -7,7 +7,7 @@ export const Feature: React.FC = () => {
 
   return (
     <section>
-      <Container px={6} py={8} mx="auto" bgColor={bg} maxW="7xl">
+      <Box px={6} py={8} mx="auto" bgColor={bg}>
         <Grid gap={6} gridTemplateColumns={['auto', 'auto', 'auto auto', 'repeat(3, 1fr)']}>
           <Box>
             <Icon h={8} w={8} viewBox="0 0 30 30">
@@ -102,7 +102,7 @@ export const Feature: React.FC = () => {
             </Text>
           </Box>
         </Grid>
-      </Container>
+      </Box>
     </section>
   )
 }

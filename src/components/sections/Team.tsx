@@ -1,13 +1,4 @@
-import {
-  Box,
-  Container,
-  Flex,
-  Grid,
-  Heading,
-  Image,
-  Text,
-  useColorModeValue,
-} from '@chakra-ui/react'
+import { Box, Flex, Grid, Heading, Image, Text, useColorModeValue } from '@chakra-ui/react'
 
 export const Team: React.FC = () => {
   const bg = useColorModeValue('white', 'gray.800')
@@ -17,7 +8,7 @@ export const Team: React.FC = () => {
 
   return (
     <section>
-      <Container px={6} py={6} mx="auto" bgColor={bg} maxW="7xl">
+      <Box px={6} py={6} mx="auto" bgColor={bg}>
         <Heading
           color={heading}
           fontWeight="medium"
@@ -126,7 +117,7 @@ export const Team: React.FC = () => {
             </Box>
           </Grid>
         </Flex>
-      </Container>
+      </Box>
     </section>
   )
 }

@@ -1,14 +1,4 @@
-import {
-  Box,
-  Container,
-  Flex,
-  Heading,
-  Icon,
-  Image,
-  Link,
-  Text,
-  useColorModeValue,
-} from '@chakra-ui/react'
+import { Box, Flex, Heading, Icon, Image, Link, Text, useColorModeValue } from '@chakra-ui/react'
 
 export const AboutMe: React.FC = () => {
   const bg = useColorModeValue('white', 'gray.800')
@@ -20,7 +10,7 @@ export const AboutMe: React.FC = () => {
 
   return (
     <section>
-      <Container px={6} py={8} mx="auto" bgColor={bg} maxW="7xl">
+      <Box px={6} py={8} mx="auto" bgColor={bg}>
         <Box display={{ lg: 'flex' }} alignItems="center">
           <Box width={{ lg: 1 / 2 }}>
             <Heading size="3xl" color={heading} fontWeight="bold">
@@ -36,7 +26,7 @@ export const AboutMe: React.FC = () => {
               maiores beatae ipsa omnis aliquam?
             </Text>
             <Flex alignItems="center" mx={-2} mt={6}>
-              <Link mx={2} href="#" ariaLabel="Twitter">
+              <Link mx={2} href="#" aria-label="Twitter">
                 <Icon color={icon} h={5} w={5} viewBox="0 0 512 512" _hover={{ color: hover }}>
                   <path
                     fill="currentColor"
@@ -44,7 +34,7 @@ export const AboutMe: React.FC = () => {
                   />
                 </Icon>
               </Link>
-              <Link mx={2} href="#" ariaLabel="Facebook">
+              <Link mx={2} href="#" aria-label="Facebook">
                 <Icon color={icon} h={5} w={5} viewBox="0 0 512 512" _hover={{ color: hover }}>
                   <path
                     fill="currentColor"
@@ -52,7 +42,7 @@ export const AboutMe: React.FC = () => {
                   />
                 </Icon>
               </Link>
-              <Link mx={2} href="#" ariaLabel="Linkedin">
+              <Link mx={2} href="#" aria-label="Linkedin">
                 <Icon color={icon} h={5} w={5} viewBox="0 0 512 512" _hover={{ color: hover }}>
                   <path
                     fill="currentColor"
@@ -60,7 +50,7 @@ export const AboutMe: React.FC = () => {
                   />
                 </Icon>
               </Link>
-              <Link mx={2} href="#" ariaLabel="Github">
+              <Link mx={2} href="#" aria-label="Github">
                 <Icon color={icon} h={5} w={5} viewBox="0 0 512 512" _hover={{ color: hover }}>
                   <path
                     fill="currentColor"
@@ -77,7 +67,7 @@ export const AboutMe: React.FC = () => {
                   w="full"
                   h={64}
                   rounded="md"
-                  boxShadow="base"
+                  shadow="Base"
                   objectPosition="center"
                   objectFit="cover"
                   src="https://images.unsplash.com/photo-1484399172022-72a90b12e3c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
@@ -87,7 +77,7 @@ export const AboutMe: React.FC = () => {
             </Flex>
           </Box>
         </Box>
-      </Container>
+      </Box>
     </section>
   )
 }

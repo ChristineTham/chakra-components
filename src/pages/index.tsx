@@ -1,24 +1,59 @@
-import { Box } from '@chakra-ui/react'
-import Navbar from '../components/navbars/Navbar'
-import Hero from '../components/heros/Hero'
-import Hero1 from '../components/heros/Hero1'
-import Hero2 from '../components/heros/Hero2'
-import AboutMe from '../components/sections/AboutMe'
-import Feature from '../components/sections/Feature'
-import Team from '../components/sections/Team'
-import SectionHead from '../components/sections/SectionHead'
+import { Box, Container, Divider, Heading, Link, Text, useColorModeValue } from '@chakra-ui/react'
+import Navbar from '../components/navbars/MyNavbar'
+import Article from '../components/cards/Article'
+import ArticleIcon from '../components/cards/ArticleIcon'
+import ArticleImage from '../components/cards/ArticleImage'
+import Product from '../components/cards/Product'
+import ProductEval from '../components/cards/ProductEval'
+import ProductSimple from '../components/cards/ProductSimple'
+import Testimonial from '../components/cards/Testimonial'
+import User from '../components/cards/User'
+import UserDetail from '../components/cards/UserDetail'
 
-const Index: React.FC = () => (
-  <Box>
-    <Navbar />
-    <Hero />
-    <Hero1 />
-    <Hero2 />
-    <AboutMe />
-    <Feature />
-    <Team />
-    <SectionHead />
-  </Box>
-)
+const Index: React.FC = () => {
+  const bg = useColorModeValue('pink.50', 'gray.700')
+
+  return (
+    <Box>
+      <Navbar />
+      <Container bg={bg} p={6} rounded="lg">
+        <Heading as="h1">Chakra-UI Components</Heading>
+        <Text>
+          Written by{' '}
+          <Link isExternal href="https://christham.gtsb.io" color="purple.500">
+            Chris Tham
+          </Link>{' '}
+          (@chris1tham). Most of these components are inspired by the design of{' '}
+          <Link isExternal href="https://merakiui.com" color="purple.500">
+            MerakiUI
+          </Link>
+          , but rewritten to use Chakra-UI components. This page contains a selection of cards,
+          please clink on the other items on the top menu for examples of other components.
+        </Text>
+      </Container>
+      <Box bg={bg} mt={8}>
+        <Divider borderColor="pink.200" p={2} />
+        <Article />
+        <Divider borderColor="pink.200" p={2} />
+        <ArticleIcon />
+        <Divider borderColor="pink.200" p={2} />
+        <ArticleImage />
+        <Divider borderColor="pink.200" p={2} />
+        <Product />
+        <Divider borderColor="pink.200" p={2} />
+        <ProductEval />
+        <Divider borderColor="pink.200" p={2} />
+        <ProductSimple />
+        <Divider borderColor="pink.200" p={2} />
+        <Testimonial />
+        <Divider borderColor="pink.200" p={2} />
+        <User />
+        <Divider borderColor="pink.200" p={2} />
+        <UserDetail />
+        <Divider borderColor="pink.200" p={2} />
+      </Box>
+    </Box>
+  )
+}
 
 export default Index

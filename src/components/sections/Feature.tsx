@@ -22,7 +22,7 @@ export const Feature: React.FC = () => {
           <Heading as="h3" size="md">
             Default Taiwindcss Config
           </Heading>
-          <Text size="sm">
+          <Text fontSize="sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim fusce tortor, ac sed
             malesuada blandit. Et mi gravida sem feugiat.
           </Text>
@@ -48,7 +48,7 @@ export const Feature: React.FC = () => {
             Fully Responsive Components
           </Heading>
 
-          <Text size="sm">
+          <Text fontSize="sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim fusce tortor, ac sed
             malesuada blandit. Et mi gravida sem feugiat.
           </Text>
@@ -89,7 +89,7 @@ export const Feature: React.FC = () => {
             RTL Languages Support
           </Heading>
 
-          <Text size="sm">
+          <Text fontSize="sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim fusce tortor, ac sed
             malesuada blandit. Et mi gravida sem feugiat.
           </Text>

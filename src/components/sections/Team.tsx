@@ -1,4 +1,4 @@
-import { Heading, Image, SimpleGrid, Text, VStack } from '@chakra-ui/react'
+import { Box, Heading, Image, SimpleGrid, Text, VStack } from '@chakra-ui/react'
 
 export const Team: React.FC = () => {
   return (
@@ -18,10 +18,12 @@ export const Team: React.FC = () => {
               src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=739&q=80"
               alt="avatar"
             />
-            <Heading as="h3" size="base">
-              Ahmed Omer
-            </Heading>
-            <Text size="sm">CEO</Text>
+            <Box align="center">
+              <Heading as="h3" size="base">
+                Ahmed Omer
+              </Heading>
+              <Text fontSize="sm">CEO</Text>
+            </Box>
           </VStack>
 
           <VStack align="center">
@@ -35,10 +37,12 @@ export const Team: React.FC = () => {
               src="https://images.unsplash.com/photo-1516756587022-7891ad56a8cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
               alt="avatar"
             />
-            <Heading as="h3" size="base">
-              Jane Doe
-            </Heading>
-            <Text size="sm">Co-founder</Text>
+            <Box align="center">
+              <Heading as="h3" size="base">
+                Jane Doe
+              </Heading>
+              <Text fontSize="sm">Co-founder</Text>
+            </Box>
           </VStack>
 
           <VStack align="center">
@@ -52,10 +56,12 @@ export const Team: React.FC = () => {
               src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80"
               alt="avatar"
             />
-            <Heading as="h3" size="base">
-              Steve Ben
-            </Heading>
-            <Text size="sm">UI/UX</Text>
+            <Box align="center">
+              <Heading as="h3" size="base">
+                Steve Ben
+              </Heading>
+              <Text fontSize="sm">UI/UX</Text>
+            </Box>
           </VStack>
 
           <VStack align="center">
@@ -69,10 +75,12 @@ export const Team: React.FC = () => {
               src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
               alt="avatar"
             />
-            <Heading as="h3" size="base">
-              Patterson Johnson
-            </Heading>
-            <Text size="sm">Software Engineer</Text>
+            <Box align="center">
+              <Heading as="h3" size="base">
+                Patterson Johnson
+              </Heading>
+              <Text fontSize="sm">Software Engineer</Text>
+            </Box>
           </VStack>
         </SimpleGrid>
       </VStack>

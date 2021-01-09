@@ -1,29 +1,24 @@
+import { Avatar, Heading, HStack, IconButton, Link, Switch, useColorMode } from '@chakra-ui/react'
 import {
-  chakra,
-  Avatar,
-  Flex,
-  Heading,
-  HStack,
-  IconButton,
-  Link,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  Spacer,
-  Switch,
-  useColorMode,
+  Popover,
+  PopoverArrow,
+  PopoverBody,
+  PopoverContent,
+  PopoverCloseButton,
+  PopoverHeader,
+  PopoverTrigger,
 } from '@chakra-ui/react'
+import { Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react'
 
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, BellIcon } from '@chakra-ui/icons'
 
 export const Navbar: React.FC = () => {
   const { colorMode, toggleColorMode } = useColorMode()
   const isDark = colorMode === 'dark'
 
   return (
-    <chakra.nav>
-      <Flex w="100vw" p={4}>
+    <nav>
+      <HStack p={4} justify="space-between">
         <HStack spacing={4}>
           <Menu>
             <MenuButton
@@ -31,7 +26,6 @@ export const Navbar: React.FC = () => {
               as={IconButton}
               aria-label="Menu"
               icon={<HamburgerIcon />}
-              size="sm"
             />
             <MenuList>
               <MenuItem>Home</MenuItem>
@@ -44,11 +38,6 @@ export const Navbar: React.FC = () => {
           <Heading as="h1" size="lg">
             Logo
           </Heading>
-        </HStack>
-
-        <Spacer />
-
-        <HStack spacing={4}>
           <HStack display={{ base: 'none', md: 'block' }} spacing={3}>
             <Link href="#">Home</Link>
             <Link href="#">About</Link>
@@ -56,6 +45,20 @@ export const Navbar: React.FC = () => {
             <Link href="#">Contact</Link>
             <Link href="#">Privacy</Link>
           </HStack>
+        </HStack>
+
+        <HStack spacing={4}>
+          <Popover>
+            <PopoverTrigger>
+              <IconButton aria-label="View notifications" icon={<BellIcon />} />
+            </PopoverTrigger>
+            <PopoverContent>
+              <PopoverArrow />
+              <PopoverCloseButton />
+              <PopoverHeader>Notifications</PopoverHeader>
+              <PopoverBody>You have 65536 unread messages.</PopoverBody>
+            </PopoverContent>
+          </Popover>
 
           <Menu>
             <MenuButton
@@ -72,8 +75,8 @@ export const Navbar: React.FC = () => {
           </Menu>
           <Switch isChecked={isDark} onChange={toggleColorMode} />
         </HStack>
-      </Flex>
-    </chakra.nav>
+      </HStack>
+    </nav>
   )
 }
 export default Navbar

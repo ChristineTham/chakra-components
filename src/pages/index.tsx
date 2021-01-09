@@ -1,7 +1,6 @@
 import { Box } from '@chakra-ui/react'
 import Navbar from '../components/navbars/Navbar'
-// import Navbar0 from '../components/navbars/Navbar0'
-// import Navbar1 from '../components/navbars/Navbar1'
+import Hero from '../components/heros/Hero'
 import Hero1 from '../components/heros/Hero1'
 import Hero2 from '../components/heros/Hero2'
 import AboutMe from '../components/sections/AboutMe'
@@ -12,8 +11,7 @@ import SectionHead from '../components/sections/SectionHead'
 const Index: React.FC = () => (
   <Box>
     <Navbar />
-    {/* <Navbar0 /> */}
-    {/* <Navbar1 /> */}
+    <Hero />
     <Hero1 />
     <Hero2 />
     <AboutMe />

@@ -26,13 +26,13 @@ const Index: React.FC = () => {
     <Box bg={bg} pt={10}>
       <Container bg={herobg} p={6} rounded="lg" shadow="lg">
         <VStack spacing={4}>
-          <Heading as="h1">Chakra Components</Heading>
+          <Heading as="h1">My Chakra Components</Heading>
           <Text>
             Written by{' '}
             <Link isExternal href="https://christham.gtsb.io" color="purple.500">
               Chris Tham
             </Link>{' '}
-            (@chris1tham). Most of these components are inspired by the design of{' '}
+            (@chris1tham). Mostly inspired by the design of{' '}
             <Link isExternal href="https://merakiui.com" color="purple.500">
               MerakiUI
             </Link>
@@ -40,13 +40,24 @@ const Index: React.FC = () => {
             <Link isExternal href="https://chakra-ui.com" color="purple.500">
               Chakra-UI
             </Link>
-            . There are also a few components based on other sources.
+            .
           </Text>
           <Text>
             This page contains a selection of cards, please clink on the other items on the top menu
             for examples of other components. Use the switch on the top right to toggle between
             Light and Dark modes.
           </Text>
+          <Text>
+            The source code for these components are available on GitHub in the{' '}
+            <Link
+              isExternal
+              href="https://github.com/ChristineTham/chakra-components"
+              color="purple.500"
+            >
+              chakra-components
+            </Link>
+          </Text>{' '}
+          repository.
         </VStack>
       </Container>
       <Box mt={8}>

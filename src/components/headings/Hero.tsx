@@ -37,7 +37,7 @@ export const Hero: React.FC = () => {
             use to find your first customers.
           </Text>
           <Button colorScheme="purple" mt={4}>
-            Shop Now
+            Read More
           </Button>
         </Box>
       </Box>

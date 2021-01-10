@@ -1,8 +1,8 @@
 import { Box, Divider, Heading } from '@chakra-ui/react'
-import Hero from '../components/heros/Hero'
-import Hero1 from '../components/heros/Hero1'
-import Hero2 from '../components/heros/Hero2'
-import Hero3 from '../components/heros/Hero3'
+import Hero from '../components/headings/Hero'
+import Hero1 from '../components/headings/Hero1'
+import Hero2 from '../components/headings/Hero2'
+import Hero3 from '../components/headings/Hero3'
 
 const Heroes: React.FC = () => (
   <Box>

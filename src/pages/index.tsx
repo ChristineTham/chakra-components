@@ -55,9 +55,9 @@ const Index: React.FC = () => {
               color="purple.500"
             >
               chakra-components
-            </Link>
-          </Text>{' '}
-          repository.
+            </Link>{' '}
+            repository.
+          </Text>
         </VStack>
       </Container>
       <Box mt={8}>

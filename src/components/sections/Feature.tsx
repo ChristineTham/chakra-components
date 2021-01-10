@@ -20,7 +20,7 @@ export const Feature: React.FC = () => {
             />
           </Icon>
           <Heading as="h3" size="md">
-            Default Taiwindcss Config
+            Default Chakra-UI Config
           </Heading>
           <Text fontSize="sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim fusce tortor, ac sed
@@ -86,7 +86,7 @@ export const Feature: React.FC = () => {
           </Icon>
 
           <Heading as="h3" size="md">
-            RTL Languages Support
+            Light and Dark modes
           </Heading>
 
           <Text fontSize="sm">

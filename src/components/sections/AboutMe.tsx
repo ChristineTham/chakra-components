@@ -17,11 +17,15 @@ export const AboutMe: React.FC = () => {
     <section>
       <SimpleGrid columns={[1, 1, 2]} spacing={4} alignItems="center" px={6} py={8} mx="auto">
         <VStack spacing={2} align="flex-start">
-          <Heading>Who I am</Heading>
+          <Heading>Who am I</Heading>
           <Text>
-            Hi I am jane, software engineer <Link href="#">@BakaTeam</Link>, Lorem ipsum, dolor sit
-            amet consectetur adipisicing elit. Illum in sed non alias, fugiat, commodi nemo ut fugit
-            corrupti dolorem sequi ex veniam consequuntur id, maiores beatae ipsa omnis aliquam?
+            Hi I am Chris, founder of{' '}
+            <Link href="https://hellotham.com" color="purple.500">
+              Hello Tham
+            </Link>
+            , Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum in sed non alias,
+            fugiat, commodi nemo ut fugit corrupti dolorem sequi ex veniam consequuntur id, maiores
+            beatae ipsa omnis aliquam?
           </Text>
           <HStack spacing={2}>
             <IconButton as="a" href="#" aria-label="Twitter" icon={<SiTwitter />}>

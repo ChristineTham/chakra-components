@@ -4,7 +4,7 @@ export const ArticleImage: React.FC = () => {
   const bg = useColorModeValue('white', 'gray.800')
 
   return (
-    <section>
+    <article>
       <VStack maxW="2xl" mx="auto" rounded="lg" shadow="md" overflow="hidden" bg={bg}>
         <Image
           w="full"
@@ -34,7 +34,7 @@ export const ArticleImage: React.FC = () => {
           </HStack>
         </VStack>
       </VStack>
-    </section>
+    </article>
   )
 }
 export default ArticleImage

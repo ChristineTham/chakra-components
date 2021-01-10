@@ -4,7 +4,7 @@ export const Testimonial: React.FC = () => {
   const bg = useColorModeValue('white', 'gray.800')
 
   return (
-    <section>
+    <article>
       <Flex direction="column" maxW="md" mx="auto" mt={4}>
         <Circle
           size={16}
@@ -46,7 +46,7 @@ export const Testimonial: React.FC = () => {
           </Text>
         </VStack>
       </Flex>
-    </section>
+    </article>
   )
 }
 export default Testimonial

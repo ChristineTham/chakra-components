@@ -15,7 +15,7 @@ export const ProductSimple: React.FC = () => {
   const colorInverse = useColorModeValue('gray.800', 'white')
 
   return (
-    <section>
+    <article>
       <Flex direction="column" maxW="sm" mx="auto">
         <Image
           w="full"
@@ -56,7 +56,7 @@ export const ProductSimple: React.FC = () => {
           </Flex>
         </VStack>
       </Flex>
-    </section>
+    </article>
   )
 }
 export default ProductSimple

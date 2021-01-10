@@ -12,7 +12,7 @@ import {
 export const Product: React.FC = () => {
   const bg = useColorModeValue('white', 'gray.800')
   return (
-    <section>
+    <article>
       <VStack maxW="xs" mx="auto" rounded="lg" shadow="md" overflow="hidden" bg={bg}>
         <VStack spacing={2} mx="auto" px={4} py={2} align="flex-start">
           <Heading as="a" href="#" size="md" textTransform="uppercase">
@@ -38,7 +38,7 @@ export const Product: React.FC = () => {
           </Button>
         </Flex>
       </VStack>
-    </section>
+    </article>
   )
 }
 export default Product

@@ -16,7 +16,7 @@ export const ProductEval: React.FC = () => {
   const bg = useColorModeValue('white', 'gray.800')
 
   return (
-    <section>
+    <article>
       <HStack maxW="md" mx="auto" rounded="lg" shadow="lg" overflow="hidden" bg={bg}>
         <Image
           w={1 / 3}
@@ -45,7 +45,7 @@ export const ProductEval: React.FC = () => {
           </Flex>
         </VStack>
       </HStack>
-    </section>
+    </article>
   )
 }
 export default ProductEval

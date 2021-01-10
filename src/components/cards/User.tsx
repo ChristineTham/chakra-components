@@ -4,7 +4,7 @@ export const User: React.FC = () => {
   const bg = useColorModeValue('white', 'gray.800')
 
   return (
-    <section>
+    <article>
       <VStack maxW="xs" align="center" shadow="lg" rounded="lg" overflow="hidden" mx="auto" bg={bg}>
         <Image
           h={56}
@@ -23,7 +23,7 @@ export const User: React.FC = () => {
           <Text fontSize="sm">Software Engineer</Text>
         </Box>
       </VStack>
-    </section>
+    </article>
   )
 }
 export default User

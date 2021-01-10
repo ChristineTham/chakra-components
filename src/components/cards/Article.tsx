@@ -15,7 +15,7 @@ export const Article: React.FC = () => {
   const bg = useColorModeValue('white', 'gray.800')
 
   return (
-    <section>
+    <article>
       <VStack maxW="2xl" spacing={4} mx="auto" px={8} py={4} rounded="lg" shadow="md" bg={bg}>
         <Flex w="full" align="center">
           <Text fontWeight="light" fontSize="sm">
@@ -41,7 +41,7 @@ export const Article: React.FC = () => {
           </HStack>
         </Flex>
       </VStack>
-    </section>
+    </article>
   )
 }
 export default Article

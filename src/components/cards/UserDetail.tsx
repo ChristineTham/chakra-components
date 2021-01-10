@@ -16,7 +16,7 @@ export const UserDetail: React.FC = () => {
   const bg = useColorModeValue('white', 'gray.800')
 
   return (
-    <section>
+    <article>
       <Flex
         direction="column"
         maxW="sm"
@@ -64,7 +64,7 @@ export const UserDetail: React.FC = () => {
           </HStack>
         </VStack>
       </Flex>
-    </section>
+    </article>
   )
 }
 export default UserDetail

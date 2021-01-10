@@ -1768,6 +1768,11 @@ caniuse-lite@^1.0.30001093, caniuse-lite@^1.0.30001113, caniuse-lite@^1.0.300011
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001173.tgz#3c47bbe3cd6d7a9eda7f50ac016d158005569f56"
   integrity sha512-R3aqmjrICdGCTAnSXtNyvWYMK3YtV5jwudbq0T7nN9k4kmE4CBuwPqyJ+KBzepSTh0huivV2gLbSMEzTTmfeYw==
 
+chakra-next-link@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/chakra-next-link/-/chakra-next-link-1.0.6.tgz#67100541c8e462eedb5afb44a7d0915adb3622dd"
+  integrity sha512-YNXD44rDu0sQDO7XatLCotrxE1VLmjEM61VWpg/AYIoN7pu/7uJtwPze1udTQDpmUcA46CmTHpLAYIJ/Hg70ig==
+
 chalk@2.4.2, chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"

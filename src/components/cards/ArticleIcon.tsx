@@ -18,7 +18,7 @@ export const ArticleIcon: React.FC = () => {
   const bg = useColorModeValue('white', 'gray.800')
 
   return (
-    <section>
+    <article>
       <VStack
         maxW="sm"
         spacing={4}
@@ -55,7 +55,7 @@ export const ArticleIcon: React.FC = () => {
           <IconButton aria-label="Link" icon={<LinkIcon />} />
         </HStack>
       </VStack>
-    </section>
+    </article>
   )
 }
 export default ArticleIcon

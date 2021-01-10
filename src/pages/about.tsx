@@ -1,6 +1,6 @@
 import { Box, Container, Heading, Link, Text, VStack, useColorModeValue } from '@chakra-ui/react'
 
-const Index: React.FC = () => {
+const About: React.FC = () => {
   const bg = useColorModeValue('pink.50', 'gray.700')
   const herobg = useColorModeValue('pink.100', 'gray.700')
 
@@ -53,4 +53,4 @@ const Index: React.FC = () => {
   )
 }
 
-export default Index
+export default About

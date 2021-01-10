@@ -43,7 +43,7 @@ const Index: React.FC = () => {
             .
           </Text>
           <Text>
-            This page contains a selection of cards, please clink on the other items on the top menu
+            This page contains a selection of cards, please select the other items on the top menu
             for examples of other components. Use the switch on the top right to toggle between
             Light and Dark modes.
           </Text>

@@ -4,9 +4,9 @@ import Hero1 from '../components/headings/Hero1'
 import Hero2 from '../components/headings/Hero2'
 import Hero3 from '../components/headings/Hero3'
 
-const Heroes: React.FC = () => (
+const Headings: React.FC = () => (
   <Box>
-    <Heading as="h1" textAlign="center">
+    <Heading as="h1" textAlign="center" p={6}>
       Headings
     </Heading>
     <Divider p={2} />
@@ -21,4 +21,4 @@ const Heroes: React.FC = () => (
   </Box>
 )
 
-export default Heroes
+export default Headings

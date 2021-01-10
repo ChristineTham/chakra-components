@@ -4,9 +4,9 @@ import Feature from '../components/sections/Feature'
 import Team from '../components/sections/Team'
 import SectionHead from '../components/sections/SectionHead'
 
-const Heroes: React.FC = () => (
+const Sections: React.FC = () => (
   <Box>
-    <Heading as="h1" textAlign="center">
+    <Heading as="h1" textAlign="center" p={6}>
       Sections
     </Heading>
     <Divider p={2} />
@@ -21,4 +21,4 @@ const Heroes: React.FC = () => (
   </Box>
 )
 
-export default Heroes
+export default Sections

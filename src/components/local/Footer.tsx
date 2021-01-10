@@ -13,7 +13,7 @@ import {
 import { SiFacebook, SiTwitter, SiGithub, SiLinkedin } from 'react-icons/si'
 
 export const Footer: React.FC = () => {
-  const bg = useColorModeValue('pink.100', 'gray.700')
+  const bg = useColorModeValue('pink.100', 'gray.600')
 
   return (
     <chakra.footer mt={10}>

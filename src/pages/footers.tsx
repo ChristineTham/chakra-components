@@ -1,20 +1,32 @@
-import { Box, Divider, Heading } from '@chakra-ui/react'
+import { Box, Text } from '@chakra-ui/react'
+
+import Header from '../components/local/Header'
+import Show from '../components/local/Show'
+
 import SimpleFooter from '../components/footers/SimpleFooter'
 import DetailFooter from '../components/footers/DetailFooter'
 import CTAFooter from '../components/footers/CTAFooter'
 
 const Footers: React.FC = () => (
   <Box>
-    <Heading as="h1" textAlign="center" p={6}>
-      Footers
-    </Heading>
-    <Divider p={2} />
-    <SimpleFooter />
-    <Divider p={2} />
-    <DetailFooter />
-    <Divider p={2} />
-    <CTAFooter />
-    <Divider p={2} />
+    <Header heading="Footers" image="/images/browser-stats.svg">
+      <Text>Footers are displayed at the bottom of every page.</Text>
+    </Header>
+    <main>
+      <Show heading="Simple Footer" description="Adapted from MerakiUI" code="<SimpleFooter />">
+        <SimpleFooter />
+      </Show>
+      <Show heading="Detail Footer" description="Adapted from MerakiUI" code="<DetailFooter />">
+        <DetailFooter />
+      </Show>
+      <Show
+        heading="Call to Action Footer"
+        description="Adapted from MerakiUI"
+        code="<CTAFooter />"
+      >
+        <CTAFooter />
+      </Show>
+    </main>
   </Box>
 )
 

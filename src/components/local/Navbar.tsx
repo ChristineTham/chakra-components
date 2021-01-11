@@ -37,8 +37,8 @@ export const Navbar: React.FC = () => {
               <MenuItem as={Link} href="/about">
                 About
               </MenuItem>
-              <MenuItem as={Link} href="/headings">
-                Headings
+              <MenuItem as={Link} href="/headers">
+                Headers
               </MenuItem>
               <MenuItem as={Link} href="/sections">
                 Sections
@@ -60,7 +60,7 @@ export const Navbar: React.FC = () => {
           <HStack display={{ base: 'none', md: 'block' }} spacing={3}>
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
-            <Link href="/headings">Headings</Link>
+            <Link href="/headers">Headers</Link>
             <Link href="/sections">Sections</Link>
             <Link href="/forms">Forms</Link>
             <Link href="/footers">Footers</Link>

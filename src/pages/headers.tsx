@@ -37,7 +37,7 @@ const Headers: React.FC = () => (
       </Show>
       <Show
         heading="Flexible Header - default"
-        description="The flexible header can display different styles depending on props. This is the default style"
+        description="The flexible header can display different styles depending on props. This is the default style."
         code={`<FlexHeader heading="any heading"><Text>content</Text></FlexHeader>`}
       >
         <FlexHeader heading="Building a web site">
@@ -45,8 +45,26 @@ const Headers: React.FC = () => (
         </FlexHeader>
       </Show>
       <Show
+        heading="Flexible Header - foreground colour"
+        description="You can specify a colour for the Heading."
+        code={`<FlexHeader heading="any heading" color="color"><Text>content</Text></FlexHeader>`}
+      >
+        <FlexHeader heading="Building a web site" color="purple.500">
+          <Text>You can put any content in a flexible header.</Text>
+        </FlexHeader>
+      </Show>
+      <Show
+        heading="Flexible Header - background colour"
+        description="You can specify a background colour."
+        code={`<FlexHeader heading="any heading" bg="color"><Text>content</Text></FlexHeader>`}
+      >
+        <FlexHeader heading="Building a web site" bg="purple.200">
+          <Text>You can put any content in a flexible header.</Text>
+        </FlexHeader>
+      </Show>
+      <Show
         heading="Flexible Header - with image"
-        description="If you supply an image, the header will show it to the right of content by default"
+        description="If you supply an image, the header will show it to the right of content by default."
         code={`<FlexHeader heading="any heading" image="..."><Text>content</Text></FlexHeader>`}
       >
         <FlexHeader heading="Building a web site" image="/images/personal-site.svg">
@@ -55,7 +73,7 @@ const Headers: React.FC = () => (
       </Show>
       <Show
         heading="Flexible Header - flip image"
-        description="You can also have the image on the left"
+        description="You can also have the image on the left."
         code={`<FlexHeader heading="any heading" image="..." flip><Text>content</Text></FlexHeader>`}
       >
         <FlexHeader heading="Building a web site" image="/images/personal-site.svg" flip>
@@ -64,7 +82,7 @@ const Headers: React.FC = () => (
       </Show>
       <Show
         heading="Flexible Header - background image"
-        description="You can also have the image in the background"
+        description="You can also have the image in the background."
         code={`<FlexHeader heading="any heading" bgImage="url(...)"><Text>content</Text></FlexHeader>`}
       >
         <FlexHeader heading="Building a web site" bgImage="url('/images/featured-background.jpg')">

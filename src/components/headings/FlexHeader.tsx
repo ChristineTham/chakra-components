@@ -3,6 +3,7 @@ import { Center, Heading, Stack, VStack, Image } from '@chakra-ui/react'
 export interface FlexHeaderProps {
   heading: string
   bg?: string
+  color?: string
   image?: string
   bgImage?: string
   flip?: boolean
@@ -11,6 +12,7 @@ export interface FlexHeaderProps {
 export const FlexHeader: React.FC<FlexHeaderProps> = ({
   children,
   heading,
+  color,
   bg,
   image,
   bgImage,
@@ -33,11 +35,13 @@ export const FlexHeader: React.FC<FlexHeaderProps> = ({
           spacing={4}
           alignItems="center"
         >
-          <VStack spacing={2} maxW="xl" alignItems="flex-start">
-            <Heading as="h1">{heading}</Heading>
+          <VStack spacing={2} maxW="xl" w={{ md: image ? 1 / 2 : 'full' }} alignItems="flex-start">
+            <Heading as="h1" color={color}>
+              {heading}
+            </Heading>
             {children}
           </VStack>
-          {image && <Image maxW="2xl" w="full" src={image} alt="Header Image" />}
+          {image && <Image maxW="2xl" w={{ md: 1 / 2 }} src={image} alt="Header Image" />}
         </Stack>
       </Center>
     </section>

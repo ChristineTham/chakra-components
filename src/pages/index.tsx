@@ -19,8 +19,8 @@ const Index: React.FC = () => {
           Written by{' '}
           <Link isExternal href="https://christham.gtsb.io" color="purple.500">
             Chris Tham
-          </Link>{' '}
-          (@chris1tham). Mostly inspired by the design of{' '}
+          </Link>
+          . Mostly inspired by the design of{' '}
           <Link isExternal href="https://merakiui.com" color="purple.500">
             MerakiUI
           </Link>
@@ -30,11 +30,7 @@ const Index: React.FC = () => {
           </Link>
           .
         </Text>
-        <Text>
-          This page contains a selection of cards, please select the other items on the top menu for
-          examples of other components. Use the switch on the top right to toggle between Light and
-          Dark modes.
-        </Text>
+        <Text>Use the switch on the top right to toggle between Light and Dark modes.</Text>
         <Text>
           The source code for these components are available on GitHub in the{' '}
           <Link
@@ -62,7 +58,7 @@ const Index: React.FC = () => {
                     </Link>
                   </Td>
                   <Td>
-                    <Text>{item.description}</Text>
+                    <Text fontSize="sm">{item.description}</Text>
                   </Td>
                 </Tr>
               ))}
@@ -81,7 +77,7 @@ const Index: React.FC = () => {
                     </Link>
                   </Td>
                   <Td>
-                    <Text>{item.description}</Text>
+                    <Text fontSize="sm">{item.description}</Text>
                   </Td>
                 </Tr>
               ))}

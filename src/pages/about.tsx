@@ -31,7 +31,7 @@ const About: React.FC = () => {
             [React](https://reactjs.org). Written by{' '}
             <Link isExternal href="https://christham.gtsb.io" color="purple.500">
               Chris Tham
-            </Link>{' '}
+            </Link>
             .
           </Text>
           <Text>
@@ -42,6 +42,13 @@ const About: React.FC = () => {
             . The site is deployed on{' '}
             <Link isExternal href="https://vercel.com" color="purple.500">
               Vercel
+            </Link>
+            .
+          </Text>
+          <Text>
+            Illustrations by Katerina Limpitsouni at{' '}
+            <Link isExternal href="https://undraw.co" color="purple.500">
+              unDraw
             </Link>
             .
           </Text>

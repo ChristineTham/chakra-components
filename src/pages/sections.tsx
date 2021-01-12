@@ -1,5 +1,7 @@
 import { Box, Text } from '@chakra-ui/react'
 
+import { getDescription } from '../lib/navitems'
+
 import Header from '../components/local/Header'
 import Show from '../components/local/Show'
 
@@ -11,7 +13,7 @@ import SectionHead from '../components/sections/SectionHead'
 const Sections: React.FC = () => (
   <Box>
     <Header heading="Sections" image="/images/web-developer.svg">
-      <Text>Sections are parts of the web page with a specific purpose and design.</Text>
+      <Text>{getDescription('Sections', 'Static')}</Text>
     </Header>
     <main>
       <Show heading="About Me" description="Adapted from MerakiUI" code="<AboutMe />">

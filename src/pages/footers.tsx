@@ -1,5 +1,7 @@
 import { Box, Text } from '@chakra-ui/react'
 
+import { getDescription } from '../lib/navitems'
+
 import Header from '../components/local/Header'
 import Show from '../components/local/Show'
 
@@ -10,7 +12,7 @@ import CTAFooter from '../components/footers/CTAFooter'
 const Footers: React.FC = () => (
   <Box>
     <Header heading="Footers" image="/images/browser-stats.svg">
-      <Text>Footers are displayed at the bottom of every page.</Text>
+      <Text>{getDescription('Footers', 'Static')}</Text>
     </Header>
     <main>
       <Show heading="Simple Footer" description="Adapted from MerakiUI" code="<SimpleFooter />">

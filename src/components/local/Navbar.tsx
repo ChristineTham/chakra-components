@@ -15,66 +15,17 @@ import {
 import { Menu, MenuButton, MenuGroup, MenuItem, MenuList } from '@chakra-ui/react'
 import { Link } from 'chakra-next-link'
 
+import { navItems, NavItem } from '../../lib/navitems'
+
 import { HamburgerIcon, ChevronDownIcon } from '@chakra-ui/icons'
 import { ReactNode } from 'react'
-
-type NavItemType = {
-  name: string
-  href?: string
-  submenu?: NavItemType[]
-}
 
 export const Navbar: React.FC = () => {
   const bg = useColorModeValue('pink.100', 'gray.600')
   const { colorMode, toggleColorMode } = useColorMode()
   const isDark = colorMode === 'dark'
 
-  const navitems: NavItemType[] = [
-    {
-      name: 'Home',
-      href: '/',
-    },
-    {
-      name: 'About',
-      href: '/about',
-    },
-    {
-      name: 'Static',
-      submenu: [
-        {
-          name: 'Headers',
-          href: '/headers',
-        },
-        {
-          name: 'Sections',
-          href: '/sections',
-        },
-        {
-          name: 'Cards',
-          href: '/cards',
-        },
-        {
-          name: 'Forms',
-          href: '/forms',
-        },
-        {
-          name: 'Footers',
-          href: '/footers',
-        },
-      ],
-    },
-    {
-      name: 'Flexible',
-      submenu: [
-        {
-          name: 'FlexHeader',
-          href: '/flexheader',
-        },
-      ],
-    },
-  ]
-
-  function displayMenu(menu: NavItemType[]): ReactNode {
+  function displayMenu(menu: NavItem[]): ReactNode {
     return menu.map((item) => {
       if (item.href) {
         return (
@@ -93,7 +44,7 @@ export const Navbar: React.FC = () => {
     })
   }
 
-  function displayNavbar(item: NavItemType): ReactNode {
+  function displayNavbar(item: NavItem): ReactNode {
     if (item.href) {
       return (
         <Button as={Link} variant="link" colorScheme="pink" href={item.href} key={item.name}>
@@ -126,7 +77,7 @@ export const Navbar: React.FC = () => {
               colorScheme="pink"
               icon={<HamburgerIcon />}
             />
-            <MenuList>{displayMenu(navitems)}</MenuList>
+            <MenuList>{displayMenu(navItems)}</MenuList>
           </Menu>
           <Heading as="h1" size="lg">
             Chakra Components
@@ -135,7 +86,7 @@ export const Navbar: React.FC = () => {
             <Divider orientation="vertical" borderColor="purple.500" />
           </Center>
           <HStack display={{ base: 'none', md: 'block' }} spacing={5}>
-            {navitems.map((item) => displayNavbar(item))}
+            {navItems.map((item) => displayNavbar(item))}
           </HStack>
         </HStack>
 

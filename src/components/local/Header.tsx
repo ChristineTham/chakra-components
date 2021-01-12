@@ -1,12 +1,4 @@
-import {
-  Container,
-  Divider,
-  Heading,
-  SimpleGrid,
-  VStack,
-  Image,
-  useColorModeValue,
-} from '@chakra-ui/react'
+import { Heading, SimpleGrid, VStack, Image, useColorModeValue } from '@chakra-ui/react'
 
 export interface HeadingProps {
   heading: string
@@ -15,7 +7,6 @@ export interface HeadingProps {
 
 export const Header: React.FC<HeadingProps> = ({ children, heading, image }) => {
   const bg = useColorModeValue('pink.50', 'gray.700')
-  const border = useColorModeValue('pink.200', 'gray.500')
 
   return (
     <section>
@@ -34,9 +25,6 @@ export const Header: React.FC<HeadingProps> = ({ children, heading, image }) => 
         </VStack>
         <Image maxW="2xl" w="full" maxH={64} src={image} alt="Header Image" />
       </SimpleGrid>
-      <Container>
-        <Divider mx="auto" borderColor={border} p={2} />
-      </Container>
     </section>
   )
 }

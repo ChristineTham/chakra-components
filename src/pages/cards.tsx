@@ -1,5 +1,7 @@
 import { Box, Text } from '@chakra-ui/react'
 
+import { getDescription } from '../lib/navitems'
+
 import Header from '../components/local/Header'
 import Show from '../components/local/Show'
 
@@ -16,10 +18,7 @@ import UserDetail from '../components/cards/UserDetail'
 const Index: React.FC = () => (
   <Box>
     <Header heading="Cards" image="/images/personal-site.svg">
-      <Text>
-        Card components are typically used to display blog articles, products, or any information
-        that is repeated across the page.
-      </Text>
+      <Text>{getDescription('Cards', 'Static')}</Text>
     </Header>
     <main>
       <Show bg heading="Article" description="Adapted from MerakiUI" code="<Article />">

@@ -1,5 +1,7 @@
 import { Box, Text } from '@chakra-ui/react'
 
+import { getDescription } from '../lib/navitems'
+
 import Header from '../components/local/Header'
 import Show from '../components/local/Show'
 
@@ -10,7 +12,7 @@ import Login from '../components/forms/Login'
 const Forms: React.FC = () => (
   <Box>
     <Header heading="Forms" image="/images/text-field.svg">
-      <Text>Forms allow user input via controls.</Text>
+      <Text>{getDescription('Forms', 'Static')}</Text>
     </Header>
     <main>
       <Show bg heading="Simple Form" description="Adapted from MerakiUI" code="<SimpleForm />">

@@ -1,17 +1,19 @@
 import { Box, Text } from '@chakra-ui/react'
 
+import { getDescription } from '../lib/navitems'
+
 import Header from '../components/local/Header'
 import Show from '../components/local/Show'
 
-import Hero from '../components/headings/Hero'
-import Hero1 from '../components/headings/Hero1'
-import Hero2 from '../components/headings/Hero2'
-import Hero3 from '../components/headings/Hero3'
+import Hero from '../components/headers/Hero'
+import Hero1 from '../components/headers/Hero1'
+import Hero2 from '../components/headers/Hero2'
+import Hero3 from '../components/headers/Hero3'
 
 const Headers: React.FC = () => (
   <Box>
     <Header heading="Headers" image="/images/click-here.svg">
-      <Text>Headers are prominent sections at the beginning of the web page.</Text>
+      <Text>{getDescription('Headers', 'Static')}</Text>
     </Header>
     <main>
       <Show

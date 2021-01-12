@@ -3,7 +3,7 @@ import { Box, Text } from '@chakra-ui/react'
 import Header from '../components/local/Header'
 import Show from '../components/local/Show'
 
-import FlexHeader from '../components/headings/FlexHeader'
+import FlexHeader from '../components/headers/FlexHeader'
 
 const Headers: React.FC = () => (
   <Box>

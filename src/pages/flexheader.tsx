@@ -2,15 +2,14 @@ import { Box, Text } from '@chakra-ui/react'
 
 import Header from '../components/local/Header'
 import Show from '../components/local/Show'
+import { getDescription } from '../lib/navitems'
 
-import FlexHeader from '../components/headers/FlexHeader'
+import FlexHeader from '../components/flexible/FlexHeader'
 
-const Headers: React.FC = () => (
+const FlexHeaders: React.FC = () => (
   <Box>
     <Header heading="Flexible Header" image="/images/click-here.svg">
-      <Text>
-        The FlexHeader component has different customisable looks based on optional props.
-      </Text>
+      <Text>{getDescription('FlexHeader', 'Flexible')}</Text>
     </Header>
     <main>
       <Show
@@ -84,4 +83,4 @@ const Headers: React.FC = () => (
   </Box>
 )
 
-export default Headers
+export default FlexHeaders

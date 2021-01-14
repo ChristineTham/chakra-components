@@ -70,6 +70,12 @@ export const navItems: NavItem[] = [
           'The FlexHeader component has different customisable looks based on optional props.',
         href: '/flexheader',
       },
+      {
+        name: 'FlexNavbar',
+        description:
+          'FlexNavbar allows a customised navbar to be displayed with title, menu, optional logo and optional children in various positions, and can be fixed to the top of the screen.',
+        href: '/flexnavbar',
+      },
     ],
   },
 ]

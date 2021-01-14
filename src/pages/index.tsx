@@ -1,15 +1,10 @@
-import { Box, Heading, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
-import { Table, Tr, Td } from '@chakra-ui/react'
+import { Box, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
 import { Link } from 'chakra-next-link'
-
-import { getMenu, getDescription } from '../lib/navitems'
 
 import Header from '../components/local/Header'
 import Card from '../components/local/Card'
 
 const Index: React.FC = () => {
-  const staticMenu = getMenu('Static')
-  const flexMenu = getMenu('Flexible')
   const bg = useColorModeValue('pink.50', 'gray.900')
 
   return (
@@ -44,45 +39,9 @@ const Index: React.FC = () => {
         </Text>
       </Header>
       <main>
-        <SimpleGrid columns={[1, 1, 2]} gap={4} p={4} bg={bg}>
-          <Card heading="Static Components">
-            <Text>{getDescription('Static')}</Text>
-            <Table>
-              {staticMenu?.map((item) => (
-                <Tr key={item.name}>
-                  <Td>
-                    <Link href={item.href}>
-                      <Heading size="md" color="purple.500">
-                        {item.name}
-                      </Heading>
-                    </Link>
-                  </Td>
-                  <Td>
-                    <Text fontSize="sm">{item.description}</Text>
-                  </Td>
-                </Tr>
-              ))}
-            </Table>
-          </Card>
-          <Card heading="Flexible Components">
-            <Text>{getDescription('Flexible')}</Text>
-            <Table>
-              {flexMenu?.map((item) => (
-                <Tr key={item.name}>
-                  <Td>
-                    <Link href={item.href}>
-                      <Heading size="md" color="purple.500">
-                        {item.name}
-                      </Heading>
-                    </Link>
-                  </Td>
-                  <Td>
-                    <Text fontSize="sm">{item.description}</Text>
-                  </Td>
-                </Tr>
-              ))}
-            </Table>
-          </Card>
+        <SimpleGrid columns={{ base: 1, lg: 2 }} gap={4} p={4} bg={bg}>
+          <Card heading="Static Components" menu="Static" />
+          <Card heading="Flexible Components" menu="Flexible" />
         </SimpleGrid>
       </main>
     </Box>

@@ -14,7 +14,7 @@ const FlexNavbars: React.FC = () => (
     <main>
       <Show
         heading="Default"
-        description="The flexible navbar can display different styles depending on props (all of which are optional). This is the default  with no props."
+        description="The flexible navbar can display different styles depending on props (all of which are optional). This is the default with no props."
         code={`<FlexNavbar />`}
       >
         <FlexNavbar />
@@ -61,7 +61,7 @@ const FlexNavbars: React.FC = () => (
       </Show>
       <Show
         heading="Custom Elements"
-        description="You can specify additional elements in the body of the component.  By default, these will appear in the centre (but you can change this)."
+        description="You can specify additional elements in the body of the component.  By default, these will appear in the right (but you can change this)."
         code={`<FlexNavbar><Avatar /></FlexNavbar>`}
       >
         <FlexNavbar>
@@ -74,6 +74,7 @@ const FlexNavbars: React.FC = () => (
         code={`<FlexNavbar titlePos="center" logoPos="center" menuPos="left" childrenPos="right"><Avatar /></FlexNavbar>`}
       >
         <FlexNavbar
+          title="Hello World"
           titlePos="center"
           logoPos="center"
           menuPos="left"
@@ -85,10 +86,10 @@ const FlexNavbars: React.FC = () => (
       </Show>
       <Show
         heading="Fixed position"
-        description="Stick the navbar to the top of the screen by specifyin 'fixed'. Note: this is not enabled in the example below because there is already a fixed position navbar on this page."
+        description="Stick the navbar to the top of the screen by specifying 'fixed'. Note: this is not enabled in the example below because there is already a fixed position navbar on this page."
         code={`<FlexNavbar fixed />`}
       >
-        <FlexNavbar />
+        <FlexNavbar title="Always on top" />
       </Show>
     </main>
   </Box>

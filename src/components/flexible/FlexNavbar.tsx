@@ -155,16 +155,16 @@ export interface FlexNavbarProps {
 
 export const FlexNavbar: React.FC<FlexNavbarProps> = ({
   children,
-  title = 'Title',
+  title,
   color,
   bg,
   colorScheme,
   menu = exampleMenu,
   logo,
   titlePos = 'left',
-  menuPos = 'right',
   logoPos = 'left',
-  childrenPos = 'center',
+  menuPos = 'center',
+  childrenPos = 'right',
   fixed,
 }) => {
   const { colorMode, toggleColorMode } = useColorMode()

@@ -1,4 +1,4 @@
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Heading, Text } from '@chakra-ui/react'
 
 import Header from '../components/local/Header'
 import Show from '../components/local/Show'
@@ -14,68 +14,89 @@ const FlexHeaders: React.FC = () => (
     <main>
       <Show
         heading="Default"
-        description="The flexible header can display different styles depending on props. This is the default style."
-        code={`<FlexHeader heading="..."><Text>...</Text></FlexHeader>`}
+        description="By default, FlexHeader displays the current page name in a hero header."
+        code={`<FlexHeader />`}
       >
-        <FlexHeader heading="Building a web site">
+        <FlexHeader />
+      </Show>
+      <Show
+        heading="With Contents"
+        description="If you put something in the body, it is will be displayed instead of the page name."
+        code={`<FlexHeader>...</FlexHeader>`}
+      >
+        <FlexHeader>
+          <Heading>Building a web site</Heading>
           <Text>You can put any content in a flexible header.</Text>
         </FlexHeader>
       </Show>
       <Show
-        heading="With foreground colour"
-        description="You can specify a colour for the Heading."
-        code={`<FlexHeader heading="..." color="color"><Text>...</Text></FlexHeader>`}
+        heading="With NavItem"
+        description="Insert a title that is a link, combined with content."
+        code={`<FlexHeader title={{ name: 'Hello', href: '#' }}>...</FlexHeader>`}
       >
-        <FlexHeader heading="Building a web site" color="purple.500">
-          <Text>You can put any content in a flexible header.</Text>
+        <FlexHeader title={{ name: 'Hello', href: '#' }}>
+          <Text>This is the content</Text>
+        </FlexHeader>
+      </Show>
+      <Show
+        heading="With foreground colour"
+        description="You can specify a colour for the title."
+        code={`<FlexHeader title="..." color="color">...</FlexHeader>`}
+      >
+        <FlexHeader title={{ name: 'Hello', href: '#' }} color="purple.500">
+          <Text>This is the content</Text>
         </FlexHeader>
       </Show>
       <Show
         heading="With background colour"
         description="You can specify a background colour."
-        code={`<FlexHeader heading="..." bg="color"><Text>...</Text></FlexHeader>`}
+        code={`<FlexHeader bg="color">...</FlexHeader>`}
       >
-        <FlexHeader heading="Building a web site" bg="purple.200">
+        <FlexHeader bg="purple.200">
+          <Heading>Building a web site</Heading>
           <Text>You can put any content in a flexible header.</Text>
         </FlexHeader>
       </Show>
       <Show
         heading="With image"
         description="If you supply an image, the header will show it to the right of content by default."
-        code={`<FlexHeader heading="..." image="..."><Text>...</Text></FlexHeader>`}
+        code={`<FlexHeader image="...">...</FlexHeader>`}
       >
-        <FlexHeader heading="Building a web site" image="/images/personal-site.svg">
+        <FlexHeader image="/images/personal-site.svg">
+          <Heading>Building a web site</Heading>
           <Text>You can put any content in a flexible header</Text>
         </FlexHeader>
       </Show>
       <Show
         heading="Flip"
         description="You can also have the image on the left."
-        code={`<FlexHeader heading="..." image="..." flip><Text>...</Text></FlexHeader>`}
+        code={`<FlexHeader image="..." flip>...</FlexHeader>`}
       >
-        <FlexHeader heading="Building a web site" image="/images/personal-site.svg" flip>
+        <FlexHeader image="/images/personal-site.svg" flip>
+          <Heading>Building a web site</Heading>
           <Text>You can put any content in a flexible header</Text>
         </FlexHeader>
       </Show>
       <Show
         heading="Background image"
         description="You can also have the image in the background."
-        code={`<FlexHeader heading="..." bgImage="url(...)"><Text>...</Text></FlexHeader>`}
+        code={`<FlexHeader bgImage="url(...)">...</FlexHeader>`}
       >
-        <FlexHeader heading="Building a web site" bgImage="url('/images/featured-background.jpg')">
+        <FlexHeader bgImage="url('/images/featured-background.jpg')">
+          <Heading>Building a web site</Heading>
           <Text>You can put any content in a flexible header</Text>
         </FlexHeader>
       </Show>
       <Show
         heading="Background and image!"
         description="Why not have both?"
-        code={`<FlexHeader heading="..." image="..." bgImage="url(...)"><Text>...</Text></FlexHeader>`}
+        code={`<FlexHeader image="..." bgImage="url(...)"><Text>...</Text></FlexHeader>`}
       >
         <FlexHeader
-          heading="Building a web site"
           image="/images/personal-site.svg"
           bgImage="url('/images/featured-background.jpg')"
         >
+          <Heading>Building a web site</Heading>
           <Text>You can put any content in a flexible header</Text>
         </FlexHeader>
       </Show>

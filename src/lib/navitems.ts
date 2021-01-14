@@ -76,6 +76,12 @@ export const navItems: NavItem[] = [
           'FlexNavbar allows a customised navbar to be displayed with title, menu, optional logo and optional children in various positions, and can be fixed to the top of the screen.',
         href: '/flexnavbar',
       },
+      {
+        name: 'FlexCard',
+        description:
+          'FlexCard allows a customised card to be displayed with title, optional badges, images and children. The image can be on top, middle, or bottom.',
+        href: '/flexcard',
+      },
     ],
   },
 ]

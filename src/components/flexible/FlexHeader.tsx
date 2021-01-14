@@ -1,7 +1,10 @@
-import { Center, Heading, Stack, VStack, Image } from '@chakra-ui/react'
+import { Center, Heading, Link, Stack, VStack, Image } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
+
+import { NavItem } from '../../lib/navitems'
 
 export interface FlexHeaderProps {
-  heading: string
+  title?: NavItem
   bg?: string
   color?: string
   image?: string
@@ -11,13 +14,15 @@ export interface FlexHeaderProps {
 
 export const FlexHeader: React.FC<FlexHeaderProps> = ({
   children,
-  heading,
+  title,
   color,
   bg,
   image,
   bgImage,
   flip,
 }) => {
+  const page = useRouter().pathname
+
   return (
     <section>
       <Center
@@ -36,9 +41,20 @@ export const FlexHeader: React.FC<FlexHeaderProps> = ({
           alignItems="center"
         >
           <VStack spacing={2} maxW="xl" w={{ md: image ? 1 / 2 : 'full' }} alignItems="flex-start">
-            <Heading as="h1" color={color}>
-              {heading}
-            </Heading>
+            {title && title.href ? (
+              <Link as={Heading} color={color} href={title.href}>
+                {title.name}
+              </Link>
+            ) : (
+              <Heading as="h1" color={color}>
+                {title && title.name}
+              </Heading>
+            )}
+            {!(title || children) && (
+              <Heading as="h1" color={color}>
+                {page.substr(1)}
+              </Heading>
+            )}
             {children}
           </VStack>
           {image && <Image maxW="2xl" w={{ md: 1 / 2 }} src={image} alt="Header Image" />}

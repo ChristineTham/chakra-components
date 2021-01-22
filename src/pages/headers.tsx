@@ -31,7 +31,7 @@ const Headers: React.FC = () => (
       </Show>
       <Show
         heading="Header with background"
-        description="Adapted from MerakiUI - background opacity not working"
+        description="Adapted from MerakiUI - background opacity now working thanks to @chasinhues"
         code="<Hero3 />"
       >
         <Hero3 />

@@ -2,9 +2,28 @@ import { Avatar, Box, Text } from '@chakra-ui/react'
 
 import Header from '../components/local/Header'
 import Show from '../components/local/Show'
-import { getDescription } from '../lib/navitems'
+import { getDescription, NavItem } from '../lib/navitems'
 
 import FlexNavbar from '../components/flexible/FlexNavbar'
+
+const categories: NavItem[] = [
+  {
+    name: 'Fashion',
+    href: '#',
+  },
+  {
+    name: 'Food',
+    href: '#',
+  },
+  {
+    name: 'Music',
+    href: '#',
+  },
+  {
+    name: 'Technology',
+    href: '#',
+  },
+]
 
 const FlexNavbars: React.FC = () => (
   <Box>
@@ -18,6 +37,13 @@ const FlexNavbars: React.FC = () => (
         code={`<FlexNavbar />`}
       >
         <FlexNavbar />
+      </Show>
+      <Show
+        heading="With Categories"
+        description="The flexible navbar can an additional category menu below the main navbar."
+        code={`<FlexNavbar categories={[...]} />`}
+      >
+        <FlexNavbar categories={categories} />
       </Show>
       <Show
         heading="Customised Title and color"

@@ -1,10 +1,11 @@
-import { Center, Heading, Link, Stack, VStack, Image } from '@chakra-ui/react'
+import { Badge, Center, Heading, Link, Stack, HStack, VStack, Image } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 
 import { NavItem } from '../../lib/navitems'
 
 export interface FlexHeaderProps {
   title?: NavItem
+  categories?: NavItem[]
   bg?: string
   color?: string
   image?: string
@@ -15,6 +16,7 @@ export interface FlexHeaderProps {
 export const FlexHeader: React.FC<FlexHeaderProps> = ({
   children,
   title,
+  categories,
   color,
   bg,
   image,
@@ -54,6 +56,13 @@ export const FlexHeader: React.FC<FlexHeaderProps> = ({
               <Heading as="h1" color={color}>
                 {page.substr(1)}
               </Heading>
+            )}
+            {categories && (
+              <HStack spacing={4}>
+                {categories.map((category) => (
+                  <Badge key={category.name}>{category.name}</Badge>
+                ))}
+              </HStack>
             )}
             {children}
           </VStack>

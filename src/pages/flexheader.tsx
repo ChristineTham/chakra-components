@@ -2,9 +2,20 @@ import { Box, Heading, Text } from '@chakra-ui/react'
 
 import Header from '../components/local/Header'
 import Show from '../components/local/Show'
-import { getDescription } from '../lib/navitems'
+import { getDescription, NavItem } from '../lib/navitems'
 
 import FlexHeader from '../components/flexible/FlexHeader'
+
+const categories: NavItem[] = [
+  {
+    name: 'Fashion',
+    href: '#',
+  },
+  {
+    name: 'Technique',
+    href: '#',
+  },
+]
 
 const FlexHeaders: React.FC = () => (
   <Box>
@@ -35,6 +46,15 @@ const FlexHeaders: React.FC = () => (
         code={`<FlexHeader title={{ name: 'Hello', href: '#' }}>...</FlexHeader>`}
       >
         <FlexHeader title={{ name: 'Hello', href: '#' }}>
+          <Text>This is the content</Text>
+        </FlexHeader>
+      </Show>
+      <Show
+        heading="With Category Badges"
+        description="Insert a a list of category badges."
+        code={`<FlexHeader title={{ name: 'Hello', href: '#' }} categories={[...]}>...</FlexHeader>`}
+      >
+        <FlexHeader title={{ name: 'Hello', href: '#' }} categories={categories}>
           <Text>This is the content</Text>
         </FlexHeader>
       </Show>
@@ -95,6 +115,7 @@ const FlexHeaders: React.FC = () => (
         <FlexHeader
           image="/images/personal-site.svg"
           bgImage="url('/images/featured-background.jpg')"
+          categories={categories}
         >
           <Heading>Building a web site</Heading>
           <Text>You can put any content in a flexible header</Text>

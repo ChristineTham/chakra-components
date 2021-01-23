@@ -7,6 +7,7 @@ import {
   IconButton,
   Image,
   Spacer,
+  Stack,
   Switch,
   Text,
   useColorMode,
@@ -110,7 +111,7 @@ interface MobileMenuProps {
   colorScheme?: string
 }
 
-const MobileMenu: React.FC<MobileMenuProps> = ({ menu, colorScheme }) => (
+export const MobileMenu: React.FC<MobileMenuProps> = ({ menu, colorScheme }) => (
   <Menu>
     <MenuButton
       display={{ base: 'block', md: 'none' }}
@@ -123,17 +124,39 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ menu, colorScheme }) => (
   </Menu>
 )
 
-const NavMenu: React.FC<{ menu: NavItem[]; colorScheme?: string }> = ({ menu, colorScheme }) => (
+export const NavMenu: React.FC<{ menu: NavItem[]; colorScheme?: string }> = ({
+  menu,
+  colorScheme,
+}) => (
   <HStack display={{ base: 'none', md: 'block' }} spacing={5}>
     {menu.map((item) => displayNavbar(item, colorScheme))}
   </HStack>
 )
 
-const NavLogo: React.FC<{ logo: string }> = ({ logo }) => (
+export const NavCategories: React.FC<{ menu: NavItem[]; colorScheme?: string }> = ({
+  menu,
+  colorScheme,
+}) => (
+  <>
+    <Stack
+      direction={['column', 'row']}
+      p={2}
+      spacing={5}
+      mx="auto"
+      mt={2}
+      borderTop="1px"
+      borderBottom="1px"
+    >
+      {menu.map((item) => displayNavbar(item, colorScheme))}
+    </Stack>
+  </>
+)
+
+export const NavLogo: React.FC<{ logo: string }> = ({ logo }) => (
   <Image w="auto" h={10} src={logo} alt="Logo" />
 )
 
-const NavTitle: React.FC<{ color?: string }> = ({ children, color }) => (
+export const NavTitle: React.FC<{ color?: string }> = ({ children, color }) => (
   <Heading as="h1" size="lg" color={color}>
     {children}
   </Heading>
@@ -141,6 +164,7 @@ const NavTitle: React.FC<{ color?: string }> = ({ children, color }) => (
 
 export interface FlexNavbarProps {
   title?: string
+  categories?: NavItem[]
   color?: string
   bg?: string
   colorScheme?: string
@@ -156,6 +180,7 @@ export interface FlexNavbarProps {
 export const FlexNavbar: React.FC<FlexNavbarProps> = ({
   children,
   title,
+  categories,
   color,
   bg,
   colorScheme,
@@ -202,6 +227,11 @@ export const FlexNavbar: React.FC<FlexNavbarProps> = ({
           <Switch isChecked={isDark} onChange={toggleColorMode} colorScheme="purple" />
         </HStack>
       </Flex>
+      {categories && (
+        <Flex px={4} py={1} mx="auto" bg={bg}>
+          <NavCategories menu={categories} colorScheme={colorScheme} />
+        </Flex>
+      )}
     </chakra.nav>
   )
 }

@@ -156,13 +156,14 @@ export const NavLogo: React.FC<{ logo: string }> = ({ logo }) => (
   <Image w="auto" h={10} src={logo} alt="Logo" />
 )
 
-export const NavTitle: React.FC<{ color?: string }> = ({ children, color }) => (
+export const NavTitle: React.FC<{   children?: React.ReactNode; color?: string }> = ({ children, color }) => (
   <Heading as="h1" size="lg" color={color}>
     {children}
   </Heading>
 )
 
 export interface FlexNavbarProps {
+  children?: React.ReactNode
   title?: string
   categories?: NavItem[]
   color?: string

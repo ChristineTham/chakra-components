@@ -32,7 +32,7 @@ export const DetailFooter: React.FC = () => {
               <IconButton aria-label="Github" icon={<SiGithub />}></IconButton>
             </HStack>
           </VStack>
-          <SimpleGrid columns={[2, 3, 3, 4]} w="full" gap={6} justifyContents="space-between">
+          <SimpleGrid columns={[2, 3, 3, 4]} w="full" gap={6} justifyContent="space-between">
             <VStack align="flex-start">
               <Heading size="sm" textTransform="uppercase">
                 About

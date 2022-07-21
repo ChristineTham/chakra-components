@@ -2,6 +2,7 @@ import { Badge, Heading, HStack, Image, Link, VStack } from '@chakra-ui/react'
 import { NavItem } from '../../lib/navitems'
 
 export interface FlexCardProps {
+  children?: React.ReactNode
   title?: NavItem
   color?: string
   bg?: string

@@ -1,6 +1,7 @@
 import { Heading, SimpleGrid, VStack, Image, useColorModeValue } from '@chakra-ui/react'
 
 export interface HeadingProps {
+  children?: React.ReactNode
   heading: string
   image: string
 }

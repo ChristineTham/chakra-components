@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import { NavItem } from '../../lib/navitems'
 
 export interface FlexHeaderProps {
+  children?: React.ReactNode
   title?: NavItem
   categories?: NavItem[]
   bg?: string

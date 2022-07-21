@@ -16,7 +16,7 @@ export const User: React.FC = () => {
           src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
           alt="avatar"
         />
-        <Box align="center" p={4}>
+        <Box alignItems="center" p={4}>
           <Heading as="h3" size="md">
             John Doe
           </Heading>

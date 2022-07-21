@@ -1,6 +1,7 @@
 import { Box, Center, Divider, Heading, VStack, Text, useColorModeValue } from '@chakra-ui/react'
 
 export interface ShowProps {
+  children?: React.ReactNode
   heading: string
   description: string
   code: string

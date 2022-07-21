@@ -4,6 +4,7 @@ import { Table, Tr, Td } from '@chakra-ui/react'
 import { getMenu, getDescription } from '../../lib/navitems'
 
 export interface CardProps {
+  children?: React.ReactNode
   heading: string
   menu: string
 }

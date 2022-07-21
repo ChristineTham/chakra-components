@@ -18,7 +18,7 @@ export const Login: React.FC = () => {
   return (
     <form>
       <VStack spacing={4} maxW="sm" mx="auto" pt={4} rounded="md" shadow="md" bg={bg}>
-        <Box align="center" px={4}>
+        <Box alignItems="center" px={4}>
           <Heading size="lg">Brand</Heading>
           <Heading size="md">
             <em>Welcome Back!</em>

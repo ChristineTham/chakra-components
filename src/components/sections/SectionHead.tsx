@@ -20,7 +20,7 @@ export const AboutMe: React.FC = () => {
           direction={{ base: 'column', lg: 'row' }}
           bg={bg2}
           mx={{ lg: 8 }}
-          maxW={{ lg: '5xl' }}
+          maxWidth={{ lg: '5xl' }}
           shadow={{ lg: 'lg' }}
           rounded={{ lg: 'lg' }}
         >
@@ -38,9 +38,9 @@ export const AboutMe: React.FC = () => {
             py={12}
             px={6}
             spacing={4}
-            maxW={{ base: 'xl', lg: '5xl' }}
-            w={{ base: 'full', lg: 1 / 2 }}
-            align="flex-start"
+            maxWidth={{ base: 'xl', lg: '5xl' }}
+            width={{ base: 'full', lg: 1 / 2 }}
+            alignItems="flex-start"
           >
             <Heading>
               Build Your New <em>Idea</em>

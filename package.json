@@ -13,35 +13,31 @@
     "start": "next start",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "test": "eslint --ext js,jsx,ts,tsx --fix",
-    "prepare": "husky install"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^1.0.13",
-    "@chakra-ui/react": "^1.6.3",
-    "@chakra-ui/system": "^1.6.7",
-    "@chakra-ui/theme-tools": "^1.1.7",
-    "@emotion/react": "11.4.1",
-    "@emotion/styled": "11.3.0",
+    "@chakra-ui/icons": "^2.0.4",
+    "@chakra-ui/react": "^2.2.4",
+    "@chakra-ui/system": "^2.2.2",
+    "@chakra-ui/theme-tools": "^2.0.5",
+    "@emotion/babel-plugin": "^11.9.2",
+    "@emotion/react": "11.9.3",
+    "@emotion/styled": "11.9.3",
     "chakra-next-link": "^1.0.10",
-    "framer-motion": "^4.1.17",
-    "next": "^11.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.2.0"
+    "framer-motion": "^6.5.1",
+    "next": "^12.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@types/node": "^16.10.1",
-    "@types/react": "^17.0.11",
-    "@types/react-dom": "^17.0.7",
-    "@typescript-eslint/eslint-plugin": "^4.27.0",
-    "@typescript-eslint/parser": "^4.27.0",
-    "eslint": "^7.28.0",
-    "eslint-config-next": "^11.0.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "typescript": "4.4.3"
+    "@types/node": "^18.0.6",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "eslint": "^8.20.0",
+    "eslint-config-next": "^12.2.2",
+    "eslint-config-prettier": "^8.5.0",
+    "typescript": "4.7.4"
   }
 }

@@ -18,7 +18,7 @@ export const Team: React.FC = () => {
               src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=739&q=80"
               alt="avatar"
             />
-            <Box align="center">
+            <Box alignItems="center">
               <Heading as="h3" size="base">
                 Ahmed Omer
               </Heading>
@@ -37,7 +37,7 @@ export const Team: React.FC = () => {
               src="https://images.unsplash.com/photo-1516756587022-7891ad56a8cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
               alt="avatar"
             />
-            <Box align="center">
+            <Box alignItems="center">
               <Heading as="h3" size="base">
                 Jane Doe
               </Heading>
@@ -56,7 +56,7 @@ export const Team: React.FC = () => {
               src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80"
               alt="avatar"
             />
-            <Box align="center">
+            <Box alignItems="center">
               <Heading as="h3" size="base">
                 Steve Ben
               </Heading>
@@ -75,7 +75,7 @@ export const Team: React.FC = () => {
               src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
               alt="avatar"
             />
-            <Box align="center">
+            <Box alignItems="center">
               <Heading as="h3" size="base">
                 Patterson Johnson
               </Heading>
